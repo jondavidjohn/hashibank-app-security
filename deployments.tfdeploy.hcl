@@ -24,11 +24,6 @@ deployment "app_security" {
   }
 }
 
-upstream_input "main_vpc" {
-  stack = "tfstacks-vpc-eks-hashibank" // Or your exact stack name
-  output = "vpc_id"
-}
-
 deployment "default" {
   inputs = {
     vpc_id = upstream_input.main_vpc.value
