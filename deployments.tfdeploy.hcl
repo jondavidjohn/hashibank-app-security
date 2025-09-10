@@ -7,10 +7,10 @@ identity_token "aws" {
 
 # This is the magic of Linked Stacks. It tells this stack to consume an output
 # published by another stack in the same project.
-upstream_input "main_vpc" {
+/*upstream_input "main_vpc" {
   stack  = "tfstacks-vpc-eks-hashibank" # The name of your main stack
   output = "vpc_id"
-}
+}*/
 
 # This defines a single deployment for our security group.
 deployment "app_security" {
