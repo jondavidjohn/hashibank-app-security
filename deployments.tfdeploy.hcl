@@ -5,11 +5,6 @@ identity_token "aws" {
   audience = ["aws.workload.identity"]
 }
 
-# --- The upstream_input block is commented out for this test ---
-# upstream_input "main_vpc" {
-#   stack  = "tfstacks-vpc-eks-hashibank"
-#   output = "vpc_id"
-# }
 
 deployment "app_security" {
   inputs = {
