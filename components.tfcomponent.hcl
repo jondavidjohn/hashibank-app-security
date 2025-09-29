@@ -3,6 +3,7 @@ component "app_security_group" {
 
   inputs = {
     vpc_id = var.vpc_id
+    description = var.description
   }
 
   providers = {

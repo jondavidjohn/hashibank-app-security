@@ -15,6 +15,7 @@ deployment "app_security" {
     # For this test, we are providing a hardcoded VPC ID.
     # Replace this with the actual VPC ID from your main HashiBank stack's output.
     vpc_id = "vpc-024cf39243612974e"
+    description = store.varset.test-varset.stable.SOME_VAR
 
     # The rest of the inputs remain the same.
     role_arn           = "arn:aws:iam::177099687113:role/tfstacks-role" # Use your role ARN

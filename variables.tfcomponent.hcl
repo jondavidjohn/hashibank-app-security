@@ -5,6 +5,11 @@ variable "vpc_id" {
   type        = string
 }
 
+variable "description" {
+  description = "The description of the security group."
+  type        = string
+}
+
 variable "role_arn" {
   description = "The ARN of the IAM role for HCP Terraform to assume."
   type        = string

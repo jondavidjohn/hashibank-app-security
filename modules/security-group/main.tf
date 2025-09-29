@@ -6,9 +6,14 @@ variable "vpc_id" {
   type        = string
 }
 
+variable "description" {
+  description = "Description of the security group."
+  type        = string
+}
+
 resource "aws_security_group" "app" {
   name        = "hashibank-app-sg"
-  description = "Security group for the HashiBank application tier"
+  description = var.description
   vpc_id      = var.vpc_id
 
   ingress {
