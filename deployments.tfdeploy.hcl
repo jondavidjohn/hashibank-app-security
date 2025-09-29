@@ -2,7 +2,7 @@
 # It removes the Linked Stacks functionality to see if the rest of the stack deploys.
 
 store "varset" "test-varset" {
-  id = "varset-nnReXgtTkmLssQDB"
+  id = "varset-nnReXgtTkmLssQDB-bad-id"
   category = "env"
 }
 
