@@ -1,10 +1,14 @@
 # This is a temporary file for our final diagnostic test.
 # It removes the Linked Stacks functionality to see if the rest of the stack deploys.
 
+store "varset" "test-varset" {
+  id = "varset-nnReXgtTkmLssQDB"
+  category = "env"
+}
+
 identity_token "aws" {
   audience = ["aws.workload.identity"]
 }
-
 
 deployment "app_security" {
   inputs = {
